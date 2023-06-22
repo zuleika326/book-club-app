@@ -3,44 +3,28 @@ import React from 'react'
 
 export default function LoginPage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100" >
-      <div className="w-96 bg-white rounded-lg shadow-lg p-8">
-        <h2 className="text-2xl font-bold mb-8">Login</h2>
-        <form>
-          <div className="bg-gray-200 ">
-            <h1>Email</h1>
+    <div className='bg-blue-400 flex flex-col justify-center' >
+      <form className='max-w-[400px] w-full mx-auto bg-gray-900 p-8 px-8 rounded-lg'>
+        <h2 className='text-4x1 dark:text-white font-bold text-center'>LOGIN</h2>
+        <div className='flex flex-col text-gray-400 py-2'>
+        <label>Email</label>
+        <input className='rounded-lg bg-gray-700 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none' type="text" />
+        </div>
 
-            <input
-              type="email"
-              id="email"
-              className="w-full border border-gray-300 rounded-lg p-2 border-solid border-2 border-sky-500"
-              required
-            />
-          </div>
-          <div className="mb-4 " >
-            <h1>Password</h1>
-            
-            <input
-              type="password"
-              id="password"
-              className="w-full border border-gray-300 rounded-lg p-2"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <input
-              placeholder="Login"
-              type="SignUp"
-              id="SignUp"
-              className="w-full border border-gray-300 rounded-lg p-2"
-              required
-            />
-          </div>
-          <h2>Forgot Password?</h2>
-          <h2>Already have an account?</h2>
-          <a href="login"></a>
-        </form>
-      </div>
+        <div className='flex flex-col text-gray-400 py-2'>
+        <label>Password</label>
+        <input className='rounded-lg bg-gray-700 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none' type="Password" />
+        </div>
+        <button className='w-full my-5 py-2 bg-rose-700 rounded-lg'>Login</button>
+        <div className='flex justify-between text-gray-400 py-2'>
+          <p className='flex items-center '><input className='mr-2' type="Checkbox" />Remember Me?</p>
+          <p>Forgot Password?</p>
+        </div>
+        <div>
+          <p>Need an account? <a className='mr-4 hover:underline md:mr-6'  href='#'> SignUp</a></p>
+        </div>
+       
+      </form>
     </div>
-  );
+  )
 }
