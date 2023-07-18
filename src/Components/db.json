@@ -1,0 +1,63 @@
+{
+    "premiumLibrary": [
+      {
+        "id": 1,
+        "title": "Book 1",
+        "author": "Author 1",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        "id": 2,
+        "title": "Book 2",
+        "author": "Author 2",
+        "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+      },
+      {
+        "id": 3,
+        "title": "Book 3",
+        "author": "Author 3",
+        "content": "Sed dapibus malesuada maximus. Nullam tristique felis et tellus placerat, eu interdum nunc sagittis."
+      }
+    ],
+    "ebooks": [
+      {
+        "id": 1,
+        "title": "Ebook 1",
+        "author": "Author 1",
+        "genre": "Genre 1"
+      },
+      {
+        "id": 2,
+        "title": "Ebook 2",
+        "author": "Author 2",
+        "genre": "Genre 2"
+      },
+      {
+        "id": 3,
+        "title": "Ebook 3",
+        "author": "Author 3",
+        "genre": "Genre 3"
+      }
+    ],
+    "audiobooks": [
+      {
+        "id": 1,
+        "title": "Audiobook 1",
+        "author": "Author 1",
+        "duration": "2:30:00"
+      },
+      {
+        "id": 2,
+        "title": "Audiobook 2",
+        "author": "Author 2",
+        "duration": "1:45:30"
+      },
+      {
+        "id": 3,
+        "title": "Audiobook 3",
+        "author": "Author 3",
+        "duration": "3:15:45"
+      }
+    ]
+  }
+  

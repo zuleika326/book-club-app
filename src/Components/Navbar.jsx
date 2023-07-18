@@ -1,6 +1,7 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { useNavigate, Link} from "react-router-dom";
+
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ export default function HomePage() {
   return (
     <div className="bg-gray-100">
       <header className="bg-gray-400 py-4 rounded-lg">
-        <div className="container mx-auto flex items-center justify-between">
+        <div className="container mx-auto flex items-center justify-between pointer-events-auto">
           <nav className=" w-full rounded-lg">
             <ul className="flex space-x-4 mt">
               <li>
@@ -21,40 +22,33 @@ export default function HomePage() {
                   Home
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-white font-medium hover:text-rose-700 flex p-4"
-                >
+              
+              <li className="text-white font-medium hover:text-rose-700 flex p-4">
+                <Link to="EbooksPage">
                   E-books
-                </a>
+                  </Link>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-white font-medium hover:text-rose-700 flex p-4"
-                >
+              <li className="text-white font-medium hover:text-rose-700 flex p-4">
+                <Link to="AudioBooksPage">
                   Audio books
-                </a>
+                  </Link>
               </li>
-              <li>
-                <Link to="./authors">
+              <li className="text-white font-medium hover:text-rose-700 p-4 flex">
+                <Link to="FreeContentPage">
                   Free content
-                </Link>
+                  </Link>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-white font-medium hover:text-rose-700 p-4 flex"
-                >
-                  Author
-                </a>
+              <li className="text-white font-medium hover:text-rose-700 p-4 flex">
+                <Link to= "WritersList">
+                  Authors
+                  </Link>
               </li>
-              <li>
-                <a href="#" className="text-rose-700  font-medium p-4 flex">
+              <li className="text-rose-700  font-medium p-4 flex" >
+                 <Link to="PremiumlibraryPage">
                   Premium Library
-                </a>
+                  </Link>
               </li>
+             
               <input
                 className="rounded-lg bg-slate-800 p-2 m-2 mb-2 text-white"
                 type="search"

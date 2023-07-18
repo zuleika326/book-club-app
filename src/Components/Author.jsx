@@ -27,7 +27,7 @@ export default function Author() {
             <input
               className="rounded-lg bg-slate-300 px-4 py-2 mt-2 my-2 hover:bg-blue-600 "
               type="text"
-              placeholder="Deila Owens"
+              placeholder="Della Owens"
             />
           </div>
 
@@ -35,21 +35,17 @@ export default function Author() {
             Discover and discuss your favorite books with Authors and fellow
             readers.
           </p>
-          <a
-            href="#"
+      <Link to="/writersList">
+          <button
+        
             className="bg-rose-700 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded"
           >
             see more
-          </a>
+          </button>
+          </Link>
         </div>
-        {/* {showCategories ? 'Hide Categories' : 'See More'}
-{showCategories && (
-        <ul className="mt-4">
-          {categories.map((category, index) => (
-            <li key={index}>{category}</li>
-          ))}
-        </ul>
-      )} */}
+        
+       
 
         <div className="relative bg-[url-{https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkWmM0SUliqLTbAu2NpmBR9NUSq2hz2KD1xg&usqp=CAU}]">
           
