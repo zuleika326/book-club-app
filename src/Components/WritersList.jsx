@@ -6,7 +6,7 @@ function WritersList() {
         
         {
             id: 1,
-            name: 'Patricia Williams',
+            name: 'Patricia Cornwell',
             title: 'Author',
             age: 35,
             bio: 'Patricia Williams is an accomplished author with several published books.',

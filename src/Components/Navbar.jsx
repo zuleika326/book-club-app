@@ -49,11 +49,11 @@ export default function HomePage() {
                   </Link>
               </li>
              
-              <input
+              {/* <input
                 className="rounded-lg bg-slate-800 p-2 m-2 mb-2 text-white"
                 type="search"
                 placeholder="Search"
-              />
+              /> */}
              <button className="bg-rose-700 rounded-lg m-2 p-2 text-white " onClick={handleSignUp}>SignUp</button>
               <button
                 className="bg-rose-700 rounded-lg m-2 p-2 text-white"
