@@ -11,6 +11,8 @@ import EbooksPage from "./Components/EbooksPage"
 import AudiobooksPage from "./Components/AudiobooksPage"
 import PremiumLibraryPage from "./Components/PremiumLibraryPage"
 import FreeContentPage from "./Components/FreeContentPage"
+import BooksE from "./Components/BooksE";
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +28,8 @@ function App() {
         <Route path="/AudiobooksPage" element={<AudiobooksPage/>} />
         <Route path="/PremiumLibraryPage" element={<PremiumLibraryPage/>} />
         <Route path="/FreeContentPage" element={<FreeContentPage/>} />
+        <Route path="/BooksE" element={<BooksE/>} />
+       
       </Routes>
       
     </BrowserRouter>

@@ -1,29 +1,22 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
+import React from 'react';
+import { useNavigate, Link} from "react-router-dom";
 
-export default function EbooksPage() {
-  const [ebooks, setEbooks] = useState([]);
-
-  useEffect(() => {
-    
-    fetch("")
-      .then((response) => response.json())
-      .then((data) => setEbooks(data))
-      .catch((error) => console.log(error));
-  }, []);
-
+const Ebook = () => {
   return (
-    <div>
-      <h1>E-books</h1>
-      <ul>
-        {ebooks.map((ebook) => (
-          <li key={ebook.id}>
-            <h3>{ebook.title}</h3>
-            <p>Author: {ebook.author}</p>
-            <p>Genre: {ebook.genre}</p>
-          </li>
-        ))}
-      </ul>
+    <div className="flex flex-col items-center mt-10">
+      <h1 className="text-4xl font-bold mb-5">E-Books</h1>
+      <p className="text-lg text-gray-600">
+        
+      </p>
+      <Link to="/BooksE">
+      <button className="mt-5 bg-rose-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+        Read Now
+      </button>
+      </Link>
     </div>
+    
   );
-}
+};
+
+export default Ebook;

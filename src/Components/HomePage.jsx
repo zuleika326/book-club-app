@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import Author from './Author';
-
+import Community from './Community'
 const Homepage = () => {
   return (
     <>
@@ -15,7 +15,7 @@ const Homepage = () => {
         <div className="container mx-auto px-4">
       
           <Author />
-
+          <Community/>
         </div>
       </div>
     </>

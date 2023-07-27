@@ -94,6 +94,7 @@ export default function SignUpPage() {
             </a>
           </p>
         </div>
+        
       </form>
     </div>
   );

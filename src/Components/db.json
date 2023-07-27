@@ -60,6 +60,29 @@
         "author": "Author 3",
         "duration": "3:15:45"
       }
-    ]
-  }
+    ],
+    
+
+    
+      "discussion": [
+        {
+          "id": 1,
+          "text": "Just finished reading 'The Great Gatsby'. What a fantastic book!",
+          "createdAt": "2023-07-22T09:30:00Z"
+        },
+        {
+          "id": 2,
+          "text": "Has anyone read 'To Kill a Mockingbird'? I'm considering it for my next read.",
+          "createdAt": "2023-07-23T12:15:00Z"
+        },
+        {
+          "id": 3,
+          "text": "I'm looking for some recommendations for mystery novels. Any suggestions?",
+          "createdAt": "2023-07-24T08:45:00Z"
+        }
+      ]
+    }
+    
+
+  
   
