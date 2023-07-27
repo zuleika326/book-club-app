@@ -23,40 +23,55 @@ export default function HomePage() {
                 </a>
               </li>
               
-              <li className="text-white font-medium hover:text-rose-700 flex p-4">
+              <li className="text-white font-medium hover:text-rose-500 flex p-4">
                 <Link to="EbooksPage">
                   E-books
                   </Link>
               </li>
-              <li className="text-white font-medium hover:text-rose-700 flex p-4">
+              <li className="text-white font-medium hover:text-rose-500 flex p-4">
                 <Link to="AudioBooksPage">
                   Audio books
                   </Link>
               </li>
-              <li className="text-white font-medium hover:text-rose-700 p-4 flex">
+              <li className="text-white font-medium hover:text-rose-500 p-4 flex">
                 <Link to="FreeContentPage">
                   Free content
                   </Link>
               </li>
-              <li className="text-white font-medium hover:text-rose-700 p-4 flex">
+              <li className="text-white font-medium hover:text-rose-500 p-4 flex">
                 <Link to= "WritersList">
                   Authors
                   </Link>
               </li>
-              <li className="text-rose-700  font-medium p-4 flex" >
+              <li className="text-white hover:text-rose  font-medium p-4 flex hover:text-rose-500" >
                  <Link to="PremiumlibraryPage">
                   Premium Library
                   </Link>
               </li>
-             
-              {/* <input
+              <li className="font-medium p-4 flex text-rose-500">
+              <Link to="Community">
+              Community
+              </Link>
+              </li>
+            
+             <form>
+              <input
                 className="rounded-lg bg-slate-800 p-2 m-2 mb-2 text-white"
                 type="search"
                 placeholder="Search"
-              /> */}
-             <button className="bg-rose-700 rounded-lg m-2 p-2 text-white " onClick={handleSignUp}>SignUp</button>
+              />
+              </form>
+              <Link to="favorite">
               <button
-                className="bg-rose-700 rounded-lg m-2 p-2 text-white"
+          className=" bg-rose-500 hover:bg-blue-600 text-white font-medium m-2 p-2 rounded-lg "
+      >
+          View Favorite
+          </button> 
+          </Link>
+
+             <button className="bg-rose-500 rounded-lg m-2 p-2 text-white hover:bg-blue-600" onClick={handleSignUp}>SignUp</button>
+              <button
+                className="bg-rose-500 rounded-lg m-2 p-2 text-white hover:bg-blue-600"
                 onClick={handleLogin}
               >
                 {" "}

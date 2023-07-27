@@ -8,14 +8,14 @@ const Writers = ({ writersList }) => {
       <h1 className="text-2xl font-bold mb-4">Authors</h1>
       <ul className="space-y-6">
         {writersList.map(author => (
-          <li key={author.id} className="bg-rose-700 rounded shadow p-4">
+          <li key={author.id} className="bg-rose-200 rounded shadow p-4">
             <div className="flex justify-between">
               <div>
                 <span className="font-bold">{author.name}</span>
-                <span className="text-blue-500"> - {author.title}</span>
+                <span className="text-blue-700"> - {author.title}</span>
               </div>
               <div className="text-right">
-                <span className="text-blue-500">Age: {author.age}</span>
+                <span className="text-blue-700">Age: {author.age}</span>
               </div>
             </div>
             <p className="mt-2">{author.bio}</p>

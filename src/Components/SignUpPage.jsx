@@ -26,7 +26,7 @@ export default function SignUpPage() {
     }
 
     
-    navigate("/HomePage");
+    navigate("/");
   }
 
   function validateEmail(email) {
@@ -36,7 +36,7 @@ export default function SignUpPage() {
   }
 
   return (
-    <div className="bg-blue-200 flex flex-col justify-center h-screen">
+    <div className="bg-blue-200 flex flex-col justify-center h-screen cursor-pointer">
       <form className="max-w-[400px] w-full mx-auto bg-gray-900 p-8 px-8 rounded-lg">
         <h2 className="text-4xl dark:text-white font-bold text-center">
           Sign Up
@@ -71,7 +71,7 @@ export default function SignUpPage() {
         </div>
         <button
           onClick={navigateHomePage}
-          className="w-full my-5 py-2 bg-rose-700 rounded-lg"
+          className="w-full my-5 py-2 bg-rose-500 rounded-lg"
         >
           Sign Up
         </button>
@@ -83,8 +83,8 @@ export default function SignUpPage() {
           <p>Forgot Password?</p>
         </div>
         <div>
-          <p>
-            Need an account?{" "}
+          <p className="text-white">
+            Already have an account?{" "}
             <a
               className="mr-4 hover:underline md:mr-6 cursor-pointer"
               onClick={handleLogin}

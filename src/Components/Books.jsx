@@ -5,6 +5,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { API_URL } from './API';
+import { Navigate } from 'react-router-dom';
+
+const handleAddToFavorite = () => {
+ alert("book added successfully")
+
+}
 
 const Books = () => {
   const [books, setBooks] = useState([]);
@@ -16,6 +22,8 @@ const Books = () => {
       .catch(err => console.log(err))
     
   }, []);
+
+  
   return (
     <div className='books'>
       <div className='flex flex-wrap -mx-4'>
@@ -33,8 +41,12 @@ const Books = () => {
              <p className='text-red-600'>Audio not available</p>
             )}
             
-            <div><button className='bg-rose-700 rounded-lg p-2'>add to favorite</button></div>
-
+            <div>
+              <button className='bg-rose-500 rounded-lg p-2' onClick={handleAddToFavorite}>add to favorite
+             
+              
+            </button></div>
+      
           </div>
         </div>
       ))}

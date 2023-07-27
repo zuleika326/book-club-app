@@ -10,7 +10,7 @@ export default function AudiobooksPage() {
   }, []);
 
   return (
-    <div className="bg-rose-500">
+    <div className="bg-rose-300">
       <h1>Audiobooks</h1>
       <ul>
         {audiobooks.map((audiobook) => (

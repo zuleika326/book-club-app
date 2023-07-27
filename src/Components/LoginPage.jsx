@@ -26,7 +26,7 @@ export default function LoginPage() {
     }
 
     
-    navigate("/HomePage");
+    navigate("/");
   }
 
   function validateEmail(email) {
@@ -71,7 +71,7 @@ export default function LoginPage() {
         </div>
         <button
           onClick={navigateHomePage}
-          className="w-full my-5 py-2 bg-rose-700 rounded-lg"
+          className="w-full my-5 py-2 bg-rose-500 rounded-lg"
         >
           Login
         </button>
@@ -82,18 +82,7 @@ export default function LoginPage() {
           </label>
           <p>Forgot Password?</p>
         </div>
-        <div>
-          <p>
-            Need an account?{" "}
-            <a
-              className="mr-4 hover:underline md:mr-6 cursor-pointer"
-              onClick={handleSignUp}
-              href="#"
-            >
-              SignUp
-            </a>
-          </p>
-        </div>
+        
       </form>
     </div>
   );

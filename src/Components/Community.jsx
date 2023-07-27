@@ -43,15 +43,16 @@ const Community = () => {
       </div>
       <form onSubmit={handleSubmit} className="flex">
         <input
+        
           type="text"
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Start a new discussion..."
-          className="flex-1 rounded-l-md p-2 focus:outline-none"
+          className="flex-1 rounded-l-md p-2 focus:outline-none rounded-lg bg-slate-800 text-white  "
         />
         <button
           type="submit"
-          className="bg-rose-700 text-white font-medium px-4 py-2 rounded-r-md hover:bg-blue-600"
+          className="bg-rose-500 text-white font-medium px-4 py-2 rounded-r-md hover:bg-blue-600"
         >
           Post
         </button>
